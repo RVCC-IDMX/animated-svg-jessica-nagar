@@ -7,3 +7,125 @@
 body {
     text-align: center;
 }
+
+#head {
+    animation: head-tilt 6.5s infinite ease-in-out alternate;
+    transform-origin: center;
+}
+
+
+#arm {
+    animation: arm-movement 6s infinite ease-in-out alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+
+}
+
+#mug {
+    animation: mug-movement 6s infinite ease-in-out alternate;
+    transform-origin: bottom;
+
+
+}
+
+#line-1 {
+    animation: text-pop 1s ease 1;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-2{
+    animation: text-pop 1s ease 1;
+    animation-delay: 1s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-3 {
+    animation: text-pop 1s infinite;
+    animation-delay: 2s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-4 {
+    animation: text-pop 1s infinite;
+    animation-delay: 3s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-5 {
+    animation: text-pop 1s infinite;
+    animation-delay: 4s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-6 {
+    animation: text-pop 1s infinite;
+    animation-delay: 5s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-7 {
+    animation: text-pop 1s infinite;
+    animation-delay: 6s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#line-8 {
+    animation: text-pop 1s infinite;
+    animation-delay: 7s; 
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+
+@keyframes head-tilt {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(20deg);
+    }
+}
+
+@keyframes arm-movement {
+    from{
+
+        transform: rotateZ(-16deg);
+    }
+    to{
+
+        transform: rotateZ(43deg);
+    }
+    
+}
+@keyframes mug-movement {
+    from{
+
+        transform: rotateZ(-8deg);
+    }
+    to{
+
+        transform: rotateZ(24deg);
+    }
+    
+}
+
+@keyframes text-pop {
+    from{
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotateY(0deg);
+        transition: opacity 1s;
+        animation-delay: 1s;
+
+    }
+    
+}
