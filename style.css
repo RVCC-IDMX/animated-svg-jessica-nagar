@@ -29,58 +29,97 @@ body {
 }
 
 #line-1 {
-    animation: text-pop 1s ease 1;
+    opacity: 0;
+
+    animation: text-pop 1s infinite;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
 }
 
 #line-2{
-    animation: text-pop 1s ease 1;
+    opacity: 0;
+    
+    animation: text-pop 1s infinite;
     animation-delay: 1s;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 1s;
 }
 
 #line-3 {
+    opacity: 0;
+
     animation: text-pop 1s infinite;
     animation-delay: 2s;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 2s;
 }
 
 #line-4 {
+    opacity: 0;
+
     animation: text-pop 1s infinite;
     animation-delay: 3s;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 3s;
 }
 
 #line-5 {
+    opacity: 0;
+
     animation: text-pop 1s infinite;
     animation-delay: 4s;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 4s;
 }
 
 #line-6 {
+    opacity: 0;
+
     animation: text-pop 1s infinite;
     animation-delay: 5s;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 5s;
 }
 
 #line-7 {
+    opacity: 0;
+
     animation: text-pop 1s infinite;
     animation-delay: 6s;
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 6s;
 }
 
 #line-8 {
+    opacity: 0;
+
     animation: text-pop 1s infinite;
     animation-delay: 7s; 
     transform-origin: left;
     transform-box: fill-box;
+
+    animation: opacityOn 15s infinite;
+    animation-delay: 7s;
 }
 
 
@@ -117,15 +156,33 @@ body {
 }
 
 @keyframes text-pop {
-    from{
+    0%{
         transform: rotateY(-90deg);
-        opacity: 0;
     }
-    to{
+    30%{
         transform: rotateY(0deg);
-        transition: opacity 1s;
         animation-delay: 1s;
 
     }
+    
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 0;
+    }
+    43% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+
     
 }
